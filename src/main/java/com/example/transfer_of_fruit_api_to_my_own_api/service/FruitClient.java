@@ -20,6 +20,9 @@ public class FruitClient {
     }
 //    https://www.fruityvice.com/
     public FruitResponse getFruit(int id){
+        if(id < 0){
+            throw new IllegalArgumentException("No such id");
+        }
         var dto = client.get()
                 .uri("fruit/{id}", id)
                 .retrieve()
