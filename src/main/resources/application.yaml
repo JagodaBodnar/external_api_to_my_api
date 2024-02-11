@@ -1,1 +1,5 @@
 fruit-url: https://www.fruityvice.com/api/
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
